@@ -1,0 +1,35 @@
+.data{
+    position: relative;
+}
+input:not([type='checkbox']){
+    width: 25.5rem;
+    height: 1.7rem;
+    position: relative;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border: 1px solid #77777787;
+    border-radius: .2rem;
+
+}
+input:not([type='checkbox']):focus{
+    border:2px solid #1976d2 ;
+    outline: none;
+}
+input:not([type='checkbox']):focus + .label,
+input:not([type='checkbox']):valid + .label{
+    top: 20%;
+    font-size: 14px;
+    color: #1976d2;
+    background-color: white;
+}
+.label{
+    position: absolute;
+    left: 20px;
+    top: 52%;
+    font-size: 18px;
+    color: #777;
+    background: white;
+    padding: 0 10px;
+    transition: .2s ease-in;
+    pointer-events: none;
+}
